@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">&lt;Aff target="dev" /&gt;</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="<%= navActive === 'index' ? 'active' : '' %>"><a href="/">Home</a></li>
+        <li class="<%= navActive === 'goals' ? 'active' : '' %>" ><a href="/goals">Bucket List</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Tracker <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/projects">All Projects <span class="badge">3</span></a></li>
+            <li role="separator" class="divider"></li>
+            <li class="<%= navActive === 'personalWebsite' ? 'active' : '' %>"><a href="/projects/personal-website">Personal wesbite</a></li>
+            <li class="<%= navActive === 'projectTracker' ? 'active' : '' %>"><a href="/projects/project-tracker">Project tracker</a></li>
+            <li class="<%= navActive === 'rosterSchedule' ? 'active' : '' %>"><a href="/projects/roster-schedule">Roster Schedule</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <p class="navbar-btn">
+            <a class="btn btn-warning" href="https://akiraff.com/">akiraff.com</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

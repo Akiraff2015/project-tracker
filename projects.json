@@ -1,0 +1,89 @@
+{
+	"total_projects": 3,
+	"projects": [
+		{
+			"name": "Personal website",
+			"slug": "personal-website",
+			"description": "A landing page and a blog system to be implemented.",
+			"technology": {
+				"frontend": ["HTML", "CSS", "Javascript", "React"],
+				"backend": ["Express", "Nodejs", "Mongo"]
+			},
+			"status": "active",
+			"category": "active_projects",
+			"github": "https://github.com/Akiraff2015/test"
+		},
+		{
+			"name": "Project tracker",
+			"slug": "project-tracker",
+			"description": "A place where I keep in track of my projects",
+			"technology": {
+				"frontend": ["HTML", "CSS", "Javascript"],
+				"backend": ["Express", "Nodejs"]
+			},
+			"status": "active",
+			"category": "active_projects",
+			"github": null
+		},
+		{
+			"name": "Roster Schedule",
+			"slug": "roster-schedule",
+			"description": "A roster management system to keep in track of staff members",
+			"technology": {
+				"frontend": ["HTML", "CSS", "Bootstrap"],
+				"backend": ["PHP", "MySQL"]
+			},
+			"status": "inactive",
+			"category": "active_projects",
+			"github": "https://github.com/Akiraff2015/timetable"
+		},
+		{
+			"name": "Inventory Management System",
+			"slug": null,
+			"description": "Managing inventories for stock supplies",
+			"technology": {
+				"frontend": ["HTML", "CSS", "JavaScript", "Materialize", "AngularJS"],
+				"backend": ["Express", "Mongo", "Nodejs", "Passport.js"]
+			},
+			"status": "inactive",
+			"category": "old_projects",
+			"github": "https://github.com/Akiraff2015/project4"
+		},
+		{
+			"name": "Todo Flask",
+			"slug": null,
+			"description": "Gamify your experience, by completing task and gaining experience and leveling up",
+			"technology": {
+				"frontend": ["HTML", "CSS", "Bootstrap"],
+				"backend": ["Python", "Flask", "MySQLite"]
+			},
+			"status": "inactive",
+			"category": "old_projects",
+			"github": "https://github.com/Akiraff2015/todo"
+		},
+		{
+			"name": "Landing Page",
+			"slug": null,
+			"description": "Basic landing page for my uncle's company",
+			"technology": {
+				"frontend": ["HTML", "CSS", "JavaScript", "Bootstrap", "Google Maps API", "Facebook API"],
+				"backend": ["PHP", "MySQL"]
+			},
+			"status": "inactive",
+			"category": "old_projects",
+			"github": "https://github.com/Akiraff2015/promill"
+		},
+		{
+			"name": "Project Challenge",
+			"slug": null,
+			"description": "A project challenge, in building fullstack auth application with MeteorJs",
+			"technology": {
+				"frontend": ["HTML", "CSS", "JavaScript", "BlazeLayout", "FlowRouter", "Bootstrap"],
+				"backend": ["Mongo", "Meteorjs"]
+			},
+			"status": "inactive",
+			"category": "old_projects",
+			"github": "https://github.com/Akiraff2015/project-challenge"
+		}
+	]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<% include _partials/head %>
+	<body>
+		<% include _partials/nav %>
+		<main class="container">
+			<header class="row">
+				<article class="col-md-9">
+					<section class="row">
+						<summary class="col-md-12">
+					    	<h1> &lt;Aff target="dev" /></h1>
+					    	<h3> Hello my name is Akira &#x1F44B;! I am a self-taught web developer.</h3>
+		  				</summary>
+		  			</section>
+
+		  			<section class="row">
+		  				<summary class="col-md-6">
+			    			<h3>Difference between <a target="_blank" href="https://aff.dev">aff.dev</a> and <a target="_blank" href="https://akiraff.com">akiraff.com</a>?</h3>
+			    			<ul>
+			    				<li>Akiraff.com: The website is mainly for blogging and professional related stuffs, and is where you'll be able to contact me!</li>
+			    				<li>Aff.dev: This is mainly for keeping in track of my project stats. I will frequently update different projects. You may also check out on my github, and feel free to reach me out via e-mail: akiraff@hotmail.com</li>
+			    			</ul>
+			    		</summary>
+
+				    	<summary class="col-md-6">
+				    		<h3>Favourite JavaScript framework?</h3>
+				    		<p>Being a self-taught developer, and constantly updating my knowledge. I found that <a href="https://reactjs.org/">React</a> is by far my favourite framework. The learning curve is quite low compared to <a href="https://angular.io">Angular</a> (not to be confused <a href="https://angularjs.org">AngularJS</a>).
+				    	</summary>
+			    	</section>
+			    
+			    	<section class="row">
+			    		<summary class="col-md-6">
+			    			<h3>Why Web Development?</h3>
+			    			<p>I find Web Development quite fun, especially after when you surpass your learning curve in JavaScript, and start diving depper into JavaScript: callback, IIFE, async, block scopes, and a lot of things. I still believe, that I just scratched the surface of JavaScript and there are a lot more to be accomplished with the functional scripting language, that is involving fairly quickly.</p>
+			    		</summary>
+
+			    		<summary class="col-md-6">
+			    			<h3>What are your main goals?</h3>
+			    			<p>Trasition from Hospitality to Web Development, that've been on my bucket list for nearly 5 years! I've been teaching myself for the past 3 years on Udemy, mainly NodeJS and React. Aff.dev also have a <a href="./goals">Bucket List</a> available, of things that I would like to accomplish as a developer.</p>
+			    		</summary>
+			    	</section>
+
+			    	<section class="row">
+			    		<summary class="col-md-6">
+			    			<h3>Project Tracker</h3>
+			    			<p>Here are couple of projects that I am currently working on right now:</p>
+			    			<ul>
+			    				<li>Personal Website (akiraff.com): My personal website which is being built MERN stack. <span class="badge badge-active">active</span></li>
+			    				<li>Project tracker website (aff.dev): My personal project tracker website, is purely built on Express. <span class="badge badge-active">active</span></li>
+			    				<li>Roster Schedule: A way to manage total hours that staff have worked. 100% vanilla PHP. <span class="badge badge-inactive">inactive</span></li>
+			    			</ul>
+			    		</summary>
+			    	</section>
+	    		</article>
+
+				<aside class="col-md-3">
+					<%- include("./_partials/sidebar") %>
+				</aside>
+			</header>
+
+  		</main>
+		<%- include('./_partials/footer') %>
+	</body>
+</html>

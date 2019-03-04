@@ -1,0 +1,95 @@
+{
+	"tasks": [
+		{
+			"title": "Deploying to production server",
+			"description": "The website is failry completed, and I believe is time to deploy to the server. There are couple things I need to do:",
+			"subTask": [
+				"Configuring to DNS for aff.dev",
+				"Creating a SSL Certification from Let's Encrypt",
+				"Setting up NGINX and Proxy to redirect to HTTPS",
+				"Initialize new git repository, in order to clone repository on the server"
+			],
+			"completed": "n/a"
+		},
+		{
+			"title": "Semantic HTML",
+			"description": "Revise all pages and ensure to have a good semantic standards and avoid using div tags.",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Convert all CSS to SASS",
+			"description": "Making sure that my website is scaleable in future, and hoping to add dark theme, for fun!",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implement Database",
+			"description": "Ensure my page is more dynamic in order to build a RESTful API to serve my personal website: akiraff.com. Currently all data is being saved in a static json file. Express send data to EJS.",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implement Frontend Framework and SPA",
+			"description": "I am probably going to implement either Vue or React. Really looking forward in learning Vue this year, if I have a chance to implement on aff.dev.",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Removing Bootstrap",
+			"description": "I have intentions in removing Bootstrap, once the website becomes more mature, in favour of Grid and Flex layout.",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implementing robot.txt",
+			"description": "Start playing with SEO and try to index on search engines ¯\\_(ツ)_/¯",
+			"subTask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implementing user authentication",
+			"description": "Would like to ensure that user auth works for both akiraff.com and aff.dev",
+			"subTask": null,
+			"completed": "n/a"
+		}
+	],
+	"bugs": [
+		{
+			"title": "Navbar",
+			"type": "mobile",
+			"description": "Currently when you click the hamburger icon, the menu background is set none.",
+			"fixed": "n/a"
+		},
+		{
+			"title": "Footer margin",
+			"type": "mobile",
+			"description": "The section of blog and footer margin is to close.",
+			"fixed": "n/a"
+		},
+		{
+			"title": "External links",
+			"type": "HTML",
+			"description": "Some of external links not related to aff.dev are not opening on the new tab.",
+			"fixed": "n/a"
+		},
+		{
+			"title": "Table column alignment",
+			"type": "CSS",
+			"description": "Currently 2nd and 3rd column of tables are being styled to center, due to global rule selection.",
+			"fixed": "n/a"
+		}
+	],
+	"progress": [
+		{
+			"title": "Day 3: Fast Development",
+			"date": "5 March, 2019",
+			"content": "I am fairly proud of this project. This is a fast prototype website that I started building March 2nd, 2019. The project is 3 days old, as I write this article. I decided to use Bootstrap, since I needed to build a quick project, and showcase my projects."
+		},
+		{
+			"title": "Day 2: Everything in JSON!",
+			"date": "4 March, 2019",
+			"content": "Most of the pages, specificially my tables are being loaded via JSON on Express, and is being parsed to EJS in order to be rendered. I am hoping, to create a more dynamic website, once I have the website structurize."
+		}
+	] 
+}

@@ -1,0 +1,77 @@
+{
+	"career": [
+		{
+			"goal": "Landing first job as a Frontend / Fullstack Junior Developer",
+			"priority": "High",
+			"date": "n/a"
+		},
+		{
+			"goal": "Unit testing / Deployment stage",
+			"priority": "Medium",
+			"date": "n/a"
+		},
+		{
+			"goal": "Negoating with potential stakeholders / clients",
+			"priority": "Low",
+			"date": "n/a"
+		},
+		{
+			"goal": "Manage my own developer team",
+			"priority": "Low",
+			"date": "n/a"
+		}
+	],
+
+	"personal": [
+    {
+      "goal": "Learning React Router",
+      "priority": "High",
+      "date": "n/a"
+    },
+    {
+      "goal": "Learning JWT (JSON Web Tokens) for user auth",
+      "priority": "High",
+      "date": "n/a"
+    },
+    {
+      "goal": "Learning TypeScript and implement in my personal website (currently using React)",
+      "priority": "High",
+      "date": "n/a"
+    },
+    {
+      "goal": "Managing states via Redux (API request & redux-thunk library)",
+      "priority": "Medium",
+      "date": "n/a"
+    },
+    {
+      "goal": "Learning how to use Amazon Web Services (S3)",
+      "priority": "Medium",
+      "date": "n/a"
+    },
+    {
+      "goal": "Understanding OOP in-depth and patterns",
+      "priority": "Medium",
+      "date": "n/a"
+    },
+    {
+      "goal": "Building an app via Angular and Firebase",
+      "priority": "Low",
+      "date": "n/a"
+    },
+    {
+      "goal": "Developing better Database designs",
+      "priority": "Low",
+      "date": "n/a"
+    },
+    {
+      "goal": "Creating a RESTful web service with Phoenix / Rust",
+      "priority": "Low",
+      "date": "n/a"
+    },
+    {
+      "goal": "Learning Laravel and Eloquent ORM",
+      "priority": "Low",
+      "date": "n/a"
+    }
+	]
+}

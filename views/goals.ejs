@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<%- include("_partials/head") %>
+<body>
+  <%- include("_partials/nav") %>
+  <main class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Bucket List</h1>
+        <p>This is my bucket list, I will keep adding new things to my bucket list and would like to see slowly cross things out of the list</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Career goals</h3>
+        <p>Career goals are mainly focusing something related or beneficial towards my career progress. Mainly involving with technical industry in general.</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Goal</th>
+              <th>Priority</th>
+              <th>Date achieved</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% for(let i = 0; i < goals.career.length; i++) { %>
+              <tr>
+                <td><%= goals.career[i].goal %></td>
+                <td><%= goals.career[i].priority %></td>
+                <td><%= goals.career[i].date %></td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Personal Goals</h3>
+        <p>There been couple of ideas floating around my head. I just keep this as a reminder, that I will eventually learn one of the web stacks.</p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Goal</th>
+              <th>Priority</th>
+              <th>Date Achieved</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% for (let i = 0; i < goals.personal.length; i++) { %>
+              <tr>
+                <td><%= goals.personal[i].goal %></td>
+                <td><%= goals.personal[i].priority %></td>
+                <td><%= goals.personal[i].date %></td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <%- include('./_partials/footer') %>
+</body>
+</html>

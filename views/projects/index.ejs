@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<%- include("../_partials/head") %>
+	<body>
+		<%- include("../_partials/nav") %>
+
+		<div class="container">
+			<h1>Project Tracker</h1>
+
+			<h2>Active Projects</h2>
+			<p>Some active projects that I am currently working on:</p>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Project</th>
+						<th>Description</th>
+						<th>Technology used</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<% for(let project = 0; project < activeProjects.length; project++) { %>
+						<tr>
+							<td>
+								<a href="./projects/<%= activeProjects[project].slug %>"><%= activeProjects[project].name %></a>
+							</td>
+							<td><%= activeProjects[project].description %></td>
+							<td>
+								<p> Frontend: 
+									<% for(let front = 0; front < activeProjects[project].technology.frontend.length; front++) { %>
+										<span class="badge"><%= activeProjects[project].technology.frontend[front] %></span>
+									<% } %>
+								</p>
+								<p> Backend:
+									<% for(let back = 0; back < activeProjects[project].technology.backend.length; back++) { %>
+										<span class="badge"><%= activeProjects[project].technology.backend[back] %></span>
+									<% } %>
+								</p>
+							</td>
+
+							<td>
+								<% if (activeProjects[project].status === 'active') { %>
+									<span class="badge badge-active">active</span>
+								<% } else { %>
+									<span class="badge badge-inactive">inactive</span>
+								<% } %>
+							</td>
+						</tr>
+					<% } %>
+				</tbody>
+			</table>
+
+			<h2>Old Projects</h2>
+			<p>Some old projects that I rarely update: </p>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Project</th>
+						<th>Description</th>
+						<th>Technology used</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<% for(let project = 0; project < oldProjects.length; project++) { %>
+						<tr>
+							<td><%= oldProjects[project].name %></td>
+							<td><%= oldProjects[project].description %></td>
+							<td>
+								<p> Frontend: 
+									<% for(let front = 0; front < oldProjects[project].technology.frontend.length; front++) { %>
+										<span class="badge"><%= oldProjects[project].technology.frontend[front] %></span>
+									<% } %>
+								</p>
+								<p> Backend:
+									<% for(let back = 0; back < oldProjects[project].technology.backend.length; back++) { %>
+										<span class="badge"><%= oldProjects[project].technology.backend[back] %></span>
+									<% } %>
+								</p>
+							</td>
+
+							<td>
+								<% if (oldProjects[project].status === 'active') { %>
+									<span class="badge badge-active">active</span>
+								<% } else { %>
+									<span class="badge badge-inactive">inactive</span>
+								<% } %>
+							</td>
+						</tr>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
+		<%- include('../_partials/footer') %>
+	</body>
+</html>
