@@ -6,9 +6,23 @@
 
 		<main class="container">
 			<article class="row">
-				<section class="col-md-9 col-sm-12">
+				<aside class="col-md-3 col-md-push-9 col-sm-12">
+					<%- include("../_partials/sidebar") %>
+				</aside>
+
+				<section class="col-md-9 col-md-pull-3 col-sm-12">
 					<h1>Project Tracker <a target="_blank" href="https://raw.githubusercontent.com/Akiraff2015/project-tracker/master/projectTracker.json"><button class="btn btn-xs btn-primary">View JSON</button></a></h1>
 					<p><i class="fab fa-github"></i><a class="margin-left-5px" target="_blank" href="https://github.com/Akiraff2015/project-tracker">View source</a></p>
+
+					<% for(let i = 0; i < progress.length; i++) { %>
+						<div>
+							<h3><%= progress[i].title %></h3>
+							<h4><i class="far fa-clock"></i> <%= progress[i].date %></h4>
+							<p><%= progress[i].content %></p>
+						</div>
+					<% } %>
+
+					<hr>
 					
 					<h3>Things to be done</h3>
 					<table class="table table-bordered">
@@ -60,18 +74,7 @@
 							</tbody>
 						</table>
 					</div>
-
-					<% for(let i = 0; i < progress.length; i++) { %>
-						<div>
-							<h3><%= progress[i].title %></h3>
-							<h4><i class="far fa-clock"></i> <%= progress[i].date %></h4>
-							<p><%= progress[i].content %></p>
-						</div>
-					<% } %>
 				</section>
-				<aside class="col-md-3 col-sm-12">
-					<%- include("../_partials/sidebar") %>
-				</aside>
 			</article>
 		</main>
 		<%- include('../_partials/footer') %>

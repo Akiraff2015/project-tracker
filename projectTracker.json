@@ -65,13 +65,13 @@
 			"title": "Footer margin",
 			"type": "mobile",
 			"description": "The section of blog and footer margin is to close.",
-			"fixed": "n/a"
+			"fixed": "6 Mar, 2019"
 		},
 		{
 			"title": "External links",
 			"type": "HTML",
 			"description": "Some of external links not related to aff.dev are not opening on the new tab.",
-			"fixed": "n/a"
+			"fixed": "6 Mar, 2019"
 		},
 		{
 			"title": "Table column alignment",

@@ -8,8 +8,7 @@ body {
 
 footer {
   margin-top: auto;
-  background-color: #FFF8DC;
-  font-weight: 700;
+  background-color: rgba(49, 116, 175, 0.3);
   padding: 15px; }
 
 .margin-bottom-20px {
@@ -37,8 +36,9 @@ footer {
   font-style: italic !important; }
 
 .sidebar-profile {
-  background-color: #3174AF4D;
-  border-radius: 10px;
+  background-color: rgba(49, 116, 175, 0.3);
+  margin-top: 25px;
+  border-radius: 5px;
   padding: 20px; }
   .sidebar-profile > img {
     width: auto;
@@ -48,9 +48,6 @@ footer {
 
 .table-goals > thead > tr > th:nth-child(3), .table-goals > thead > tr th:nth-child(2), .table-goals > thead > tr td:nth-child(3), .table-goals > thead > tr td:nth-child(2), .table-goals tbody > tr > th:nth-child(3), .table-goals tbody > tr th:nth-child(2), .table-goals tbody > tr td:nth-child(3), .table-goals tbody > tr td:nth-child(2) {
   text-align: center; }
-
-.btn-text-decoration-none > a:hover {
-  text-decoration: none; }
 
 .navbar-dark {
   z-index: 2;

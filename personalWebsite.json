@@ -1,0 +1,20 @@
+{
+	"tasks": [
+		{
+			"title": "",
+			"description": "",
+			"subtask": null,
+			"completed": "n/a"
+		}
+	],
+	"bugs": [
+		{
+			"title": "",
+			"type": "",
+			"description": "",
+			"fixed": "n/a"
+		}
+	],
+	"progress": [
+	]
+}

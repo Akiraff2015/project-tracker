@@ -1,0 +1,62 @@
+<section class="col-md-9 col-md-pull-3">
+	<h1>Personal Website <a target="_blank" href="#"><button class="btn btn-xs btn-primary">View JSON</button></a></h1>
+	<p><i class="fab fa-github"></i><a class="margin-left-5px" target="_blank" href="https://github.com/Akiraff2015/test"">View source</a></p>
+	
+	<% if (progress.length === 0) { %>
+		<h3>No updates yet!</h3>
+	<% } %>
+	
+	<hr>
+	
+	<h3>Things to be done</h3>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th>Description</th>
+				<th>Completed</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% for (let i = 0; i < projects.length; i++) { %>
+				<tr>
+					<td><%= projects[i].title %></td>
+					<td>
+						<%= projects[i].description %>
+						<% if (projects[i].subTask != null) { %>
+							<ul>
+								<% for(let j = 0; j < projects[i].subTask.length; j++) { %>
+									<li><%= projects[i].subTask[j] %> </li>
+								<% } %>
+							</ul>
+						<% } %>
+					</td>
+					<td>
+						<%= projects[i].completed %>
+					</td>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+
+	<h3>Bugs to be fixed</h3>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Bug</th>
+				<th>Description</th>
+				<th>Fixed</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% for(let i = 0; i < bugs.length; i++) { %>
+				<tr>
+					<td><%= bugs[i].title %> <span class="badge"><%= bugs[i].type %></span></td>
+					<td><%= bugs[i].description %></td>
+					<td><%= bugs[i].fixed %></td>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+</section>

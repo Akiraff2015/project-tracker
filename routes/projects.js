@@ -3,6 +3,7 @@ const router = express.Router();
 
 const projectJSON = require('../projects');
 const trackerJSON = require('../projectTracker');
+const personalJSON = require('../personalWebsite');
 
 router.get('/', (req, res) => res.render('projects/index', {
 	title: 'aff.dev | Projects',
@@ -13,7 +14,10 @@ router.get('/', (req, res) => res.render('projects/index', {
 }));
 router.get('/personal-website', (req, res) => res.render('projects/personalWebsite', {
 	title: 'aff.dev | Personal Website',
-	navActive: 'personalWebsite'
+	navActive: 'personalWebsite',
+	projects: personalJSON.tasks,
+	bugs: personalJSON.bugs,
+	progress: personalJSON.progress
 }));
 
 router.get('/project-tracker', (req, res) => res.render('projects/projectTracker', {

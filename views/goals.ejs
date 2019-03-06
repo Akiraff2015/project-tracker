@@ -5,13 +5,14 @@
   <%- include("_partials/nav") %>
   <main class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-3 col-md-push-9">
+        <%- include("_partials/sidebar") %>
+      </div>
+
+      <div class="col-md-9 col-md-pull-3">
         <h1>Bucket List</h1>
         <p>This is my bucket list, I will keep adding new things to my bucket list and would like to see slowly cross things out of the list</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
+
         <h3>Career goals</h3>
         <p>Career goals are mainly focusing something related or beneficial towards my career progress. Mainly involving with technical industry in general.</p>
         <table class="table table-striped table-goals">
@@ -33,11 +34,7 @@
             <% } %>
           </tbody>
         </table>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-12">
         <h3>Personal Goals</h3>
         <p>There been couple of ideas floating around my head. I just keep this as a reminder, that I will eventually learn one of the web stacks.</p>
         <table class="table table-striped">

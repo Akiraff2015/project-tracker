@@ -1,6 +1,7 @@
 // Sidebar Profile
 $PROFILE_HEIGHT: 140px;
 $PROFILE_WIDTH: 140px;
+$PROFILE_BACKGROUND: rgba(49, 116, 175, 0.3);
 
 // Margin definition
 $MARGIN_BOTTOM: 20px, 25px;
@@ -28,8 +29,7 @@ body{
 
 footer{
   margin-top:auto; 
-  background-color: #FFF8DC;
-  font-weight: 700;
+  background-color: $PROFILE_BACKGROUND;
   padding: 15px;
 }
 
@@ -57,8 +57,9 @@ footer{
 .sidebar-profile {
 	// old background
 	//background-color: #FFF8DC;
-	background-color: #3174AF4D;
-	border-radius: 10px;
+	background-color: $PROFILE_BACKGROUND;
+	margin-top: 25px;
+	border-radius: 5px;
 	padding: 20px;
 
 	> img {
@@ -79,8 +80,6 @@ footer{
 		}
 	}
 }
-
-.btn-text-decoration-none > a:hover { text-decoration: none; }
 
 
 .navbar-dark {
