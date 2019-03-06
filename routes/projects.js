@@ -4,6 +4,7 @@ const router = express.Router();
 const projectJSON = require('../projects');
 const trackerJSON = require('../projectTracker');
 const personalJSON = require('../personalWebsite');
+const rosterJSON = require('../rosterSchedule');
 
 router.get('/', (req, res) => res.render('projects/index', {
 	title: 'aff.dev | Projects',
@@ -12,25 +13,31 @@ router.get('/', (req, res) => res.render('projects/index', {
 	navActive: null
 	
 }));
-router.get('/personal-website', (req, res) => res.render('projects/personalWebsite', {
+router.get('/personal-website', (req, res) => res.render('projects/projectStructure', {
 	title: 'aff.dev | Personal Website',
 	navActive: 'personalWebsite',
 	projects: personalJSON.tasks,
 	bugs: personalJSON.bugs,
-	progress: personalJSON.progress
+	progress: personalJSON.progress,
+	info: personalJSON.info
 }));
 
-router.get('/project-tracker', (req, res) => res.render('projects/projectTracker', {
+router.get('/project-tracker', (req, res) => res.render('projects/projectStructure', {
 	title: 'aff.dev | Project Tracker',
 	navActive: 'projectTracker',
 	projects: trackerJSON.tasks,
 	bugs: trackerJSON.bugs,
-	progress: trackerJSON.progress
+	progress: trackerJSON.progress,
+	info: trackerJSON.info
 }));
 
-router.get('/roster-schedule', (req, res) => res.render('projects/rosterSchedule', {
+router.get('/roster-schedule', (req, res) => res.render('projects/projectStructure', {
 	title: 'aff.dev | Roster Schedule',
-	navActive: 'rosterSchedule'
+	navActive: 'rosterSchedule',
+	projects: rosterJSON.tasks,
+	bugs: rosterJSON.bugs,
+	progress: rosterJSON.progress,
+	info: rosterJSON.info
 }));
 
 module.exports = router;

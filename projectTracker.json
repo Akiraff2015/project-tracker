@@ -1,4 +1,9 @@
 {
+	"info": {
+		"title": "Project Tracker",
+		"jsonUrl": "https://raw.githubusercontent.com/Akiraff2015/project-tracker/master/projectTracker.json",
+		"source": "https://github.com/Akiraff2015/project-tracker"
+	},
 	"tasks": [
 		{
 			"title": "Deploying to production server",
@@ -96,5 +101,5 @@
 			"date": "4 March, 2019",
 			"content": "Most of the pages, specificially my tables are being loaded via JSON on Express, and is being parsed to EJS in order to be rendered. I am hoping, to create a more dynamic website, once I have the website structurize."
 		}
-	] 
+	]
 }

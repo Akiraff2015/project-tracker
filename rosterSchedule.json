@@ -1,8 +1,8 @@
 {
 	"info": {
-		"title": "Personal Website",
-		"jsonUrl": "https://raw.githubusercontent.com/Akiraff2015/project-tracker/master/personalWebsite.json",
-		"source": "https://github.com/Akiraff2015/test"
+		"title": "Roster Schedule",
+		"jsonUrl": "https://raw.githubusercontent.com/Akiraff2015/project-tracker/master/rosterSchedule.json",
+		"source": "https://github.com/Akiraff2015/timetable"
 	},
 	"tasks": [
 		{

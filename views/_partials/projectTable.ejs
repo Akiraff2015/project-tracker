@@ -1,9 +1,17 @@
 <section class="col-md-9 col-md-pull-3">
-	<h1>Personal Website <a target="_blank" href="#"><button class="btn btn-xs btn-primary">View JSON</button></a></h1>
-	<p><i class="fab fa-github"></i><a class="margin-left-5px" target="_blank" href="https://github.com/Akiraff2015/test"">View source</a></p>
+	<h1><%= info.title %> <a target="_blank" href="<%= info.jsonUrl %>"><button class="btn btn-xs btn-primary">View JSON</button></a></h1>
+	<p><i class="fab fa-github"></i><a class="margin-left-5px" target="_blank" href="<%= info.source %>">View source</a></p>
 	
 	<% if (progress.length === 0) { %>
 		<h3>No updates yet!</h3>
+	<% } else { %>
+		<% for(let i = 0; i < progress.length; i++) { %>
+			<div>
+				<h3><%= progress[i].title %></h3>
+				<h4><i class="far fa-clock"></i> <%= progress[i].date %></h4>
+				<p><%= progress[i].content %></p>
+			</div>
+		<% } %>
 	<% } %>
 	
 	<hr>
