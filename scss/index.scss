@@ -1,4 +1,17 @@
-html, body{ 
+// Sidebar Profile
+$PROFILE_HEIGHT: 140px;
+$PROFILE_WIDTH: 140px;
+
+// Margin definition
+$MARGIN_BOTTOM: 20px, 25px;
+
+// Badge colors
+$BADGE_COLOR: (
+	active: #30C20E,
+	inactive: #BA0000
+);
+
+html, body { 
 	height:100%; 
 	margin:0; 
 }
@@ -8,46 +21,6 @@ body{
   flex-direction:column; 
 }
 
-.margin-bottom-25px { margin-bottom: 25px; }
-.margin-bottom-20px { margin-bottom: 20px; }
-
-.sidebar-profile {
-	background-color: #FFF8DC;
-	border-radius: 10px;
-	padding: 20px;
-}
-
-.sidebar-profile > img {
-	width: auto; 
-	height: auto; 
-	max-width: 140px; 
-	max-height: 140px;
-}
-
-.table > thead > tr > th:nth-child(3), th:nth-child(2) {
-	text-align: center;
-} 
-
-.table > tbody > tr > td:nth-child(3), td:nth-child(2) {
-	text-align: center;
-}
-
-.btn-text-decoration-none > a:hover {
-	text-decoration: none;
-}
-
-.badge-active {
-	background-color: #30C20E;
-}
-
-.badge-inactive {
-	background-color: #BA0000;
-}
-
-.font-italic {
-	font-style: italic !important;
-}
-
 footer{
   margin-top:auto; 
   background-color: #FFF8DC;
@@ -55,13 +28,58 @@ footer{
   padding: 15px;
 }
 
+@each $margin_bottom in $MARGIN_BOTTOM {
+	.margin-bottom-#{$margin_bottom} {
+		margin-bottom: $margin_bottom
+	}
+}
+
+@each $badge, $color in $BADGE_COLOR {
+	.badge-#{$badge} {
+		background-color: $color !important;
+	}
+}
+
+.sidebar-profile {
+	background-color: #FFF8DC;
+	border-radius: 10px;
+	padding: 20px;
+
+	> img {
+		width: auto;
+		height: auto;
+		max-width: $PROFILE_HEIGHT;
+		max-height: $PROFILE_WIDTH;
+	}
+}
+
+.table {
+	> thead, tbody {
+		> tr {
+			> th:nth-child(3), th:nth-child(2), td:nth-child(3), td:nth-child(2) {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.btn-text-decoration-none > a:hover {
+	text-decoration: none;
+}
+
+.font-italic {
+	font-style: italic !important;
+}
+
 .navbar-dark {
 	background-color: rgba(0,0,0,1);
 	border-radius: 0 !important;
-}
 
-.navbar-dark > li > a {
-	color: white !important;
+	> li {
+		> a {
+			color: white !!important;
+		}
+	}
 }
 
 .navbar-nav {
