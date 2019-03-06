@@ -8,6 +8,8 @@
 			<article class="row">
 				<section class="col-md-9 col-sm-12">
 					<h1>Project Tracker <a target="_blank" href="https://raw.githubusercontent.com/Akiraff2015/project-tracker/master/projectTracker.json"><button class="btn btn-xs btn-primary">View JSON</button></a></h1>
+					<p><i class="fab fa-github"></i><a class="margin-left-5px" target="_blank" href="https://github.com/Akiraff2015/project-tracker">View source</a></p>
+					
 					<h3>Things to be done</h3>
 					<table class="table table-bordered">
 						<thead>
@@ -62,7 +64,7 @@
 					<% for(let i = 0; i < progress.length; i++) { %>
 						<div>
 							<h3><%= progress[i].title %></h3>
-							<h4><%= progress[i].date %></h4>
+							<h4><i class="far fa-clock"></i> <%= progress[i].date %></h4>
 							<p><%= progress[i].content %></p>
 						</div>
 					<% } %>

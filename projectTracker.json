@@ -59,7 +59,7 @@
 			"title": "Navbar",
 			"type": "mobile",
 			"description": "Currently when you click the hamburger icon, the menu background is set none.",
-			"fixed": "n/a"
+			"fixed": "6 Mar, 2019"
 		},
 		{
 			"title": "Footer margin",
@@ -77,10 +77,15 @@
 			"title": "Table column alignment",
 			"type": "CSS",
 			"description": "Currently 2nd and 3rd column of tables are being styled to center, due to global rule selection.",
-			"fixed": "n/a"
+			"fixed": "6 Mar, 2019"
 		}
 	],
 	"progress": [
+		{
+			"title": "Day 4: Refactoring my CSS to SASS",
+			"date": "6 March, 2019",
+			"content": "Today mainly was working with SASS and optimizing my code, to be more compact. In addition I've been working on the navigation bar, and trying to fix a bug on top overring Bootstrap navbar-default, so that is going to be fun to work on today."
+		},
 		{
 			"title": "Day 3: Fast Development",
 			"date": "5 March, 2019",

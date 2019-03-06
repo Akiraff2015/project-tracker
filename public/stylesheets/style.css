@@ -1,63 +1,86 @@
-/*
-Error: Invalid CSS after "			color: white ": expected ";", was "!!important;"
-        on line 80 of scss/index.scss
+html, body {
+  height: 100%;
+  margin: 0; }
 
-75: 	background-color: rgba(0,0,0,1);
-76: 	border-radius: 0 !important;
-77: 
-78: 	> li {
-79: 		> a {
-80: 			color: white !!important;
-81: 		}
-82: 	}
-83: }
-84: 
-85: .navbar-nav {
+body {
+  display: flex;
+  flex-direction: column; }
 
-Backtrace:
-scss/index.scss:80
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:804:in `block in try_declaration'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:697:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:678:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"			color: white \": expected \";\", was \"!!important;\"\A         on line 80 of scss/index.scss\A \A 75: 	background-color: rgba(0,0,0,1);\A 76: 	border-radius: 0 !important;\A 77: \A 78: 	> li {\A 79: 		> a {\A 80: 			color: white !!important;\A 81: 		}\A 82: 	}\A 83: }\A 84: \A 85: .navbar-nav {"; }
+footer {
+  margin-top: auto;
+  background-color: #FFF8DC;
+  font-weight: 700;
+  padding: 15px; }
+
+.margin-bottom-20px {
+  margin-bottom: 20px; }
+
+.margin-bottom-25px {
+  margin-bottom: 25px; }
+
+.margin-left-5px {
+  margin-left: 5px; }
+
+.badge-active {
+  background-color: #30C20E !important; }
+
+.badge-inactive {
+  background-color: #BA0000 !important; }
+
+.badge-white {
+  background-color: #FFF !important; }
+
+.badge-white {
+  color: black !important; }
+
+.font-italic {
+  font-style: italic !important; }
+
+.sidebar-profile {
+  background-color: #3174AF4D;
+  border-radius: 10px;
+  padding: 20px; }
+  .sidebar-profile > img {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 140px; }
+
+.table-goals > thead > tr > th:nth-child(3), .table-goals > thead > tr th:nth-child(2), .table-goals > thead > tr td:nth-child(3), .table-goals > thead > tr td:nth-child(2), .table-goals tbody > tr > th:nth-child(3), .table-goals tbody > tr th:nth-child(2), .table-goals tbody > tr td:nth-child(3), .table-goals tbody > tr td:nth-child(2) {
+  text-align: center; }
+
+.btn-text-decoration-none > a:hover {
+  text-decoration: none; }
+
+.navbar-dark {
+  z-index: 2;
+  background-color: black;
+  border-radius: 0 !important; }
+  .navbar-dark ul > li a {
+    color: white !important; }
+
+.dropdown-menu {
+  background-color: black !important; }
+  .dropdown-menu > li > a:hover {
+    background-image: none !important;
+    background-color: #3174AF !important; }
+
+.navbar-header .navbar-toggle {
+  background: white !important; }
+.navbar-header .icon-bar {
+  background-color: black !important; }
+.navbar-header a {
+  color: white !important; }
+
+.active {
+  background-color: #3174AF !important; }
+
+.navbar-collapse {
+  background-color: black !important; }
+
+.navbar-nav {
+  margin: 0 -15px !important; }
+  .navbar-nav li a:focus, .navbar-nav li a:hover, .navbar-nav li a:active {
+    background-color: #3174AF !important; }
+
+/*# sourceMappingURL=style.css.map */

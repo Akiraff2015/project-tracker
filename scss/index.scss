@@ -4,11 +4,16 @@ $PROFILE_WIDTH: 140px;
 
 // Margin definition
 $MARGIN_BOTTOM: 20px, 25px;
+$MARGIN_LEFT: 5px;
+
+// Active / Hover navigation bar 
+$NAV_BLUE_BACKGROUND: #3174AF;
 
 // Badge colors
 $BADGE_COLOR: (
 	active: #30C20E,
-	inactive: #BA0000
+	inactive: #BA0000,
+	white: #FFF
 );
 
 html, body { 
@@ -30,7 +35,13 @@ footer{
 
 @each $margin_bottom in $MARGIN_BOTTOM {
 	.margin-bottom-#{$margin_bottom} {
-		margin-bottom: $margin_bottom
+		margin-bottom: $margin_bottom;
+	}
+}
+
+@each $margin_left in $MARGIN_LEFT {
+	.margin-left-#{$margin_left} {
+		margin-left: $margin_left;
 	}
 }
 
@@ -40,8 +51,13 @@ footer{
 	}
 }
 
+.badge-white { color: black !important;}
+.font-italic { font-style: italic !important; }
+
 .sidebar-profile {
-	background-color: #FFF8DC;
+	// old background
+	//background-color: #FFF8DC;
+	background-color: #3174AF4D;
 	border-radius: 10px;
 	padding: 20px;
 
@@ -53,7 +69,8 @@ footer{
 	}
 }
 
-.table {
+
+.table-goals {
 	> thead, tbody {
 		> tr {
 			> th:nth-child(3), th:nth-child(2), td:nth-child(3), td:nth-child(2) {
@@ -63,25 +80,41 @@ footer{
 	}
 }
 
-.btn-text-decoration-none > a:hover {
-	text-decoration: none;
-}
+.btn-text-decoration-none > a:hover { text-decoration: none; }
 
-.font-italic {
-	font-style: italic !important;
-}
 
 .navbar-dark {
+	z-index: 2;
 	background-color: rgba(0,0,0,1);
 	border-radius: 0 !important;
 
-	> li {
-		> a {
-			color: white !!important;
-		}
+	ul > li {
+		a { color: white !important; }
 	}
 }
 
+.dropdown-menu {
+	background-color: black !important;
+	> li > a:hover {
+		background-image: none !important;
+		background-color: $NAV_BLUE_BACKGROUND !important;
+	}
+}
+
+.navbar-header {
+	.navbar-toggle { background: white !important; }
+	.icon-bar { background-color: black !important; }
+	a { color: white !important; }
+}
+
+.active { background-color: $NAV_BLUE_BACKGROUND !important; }
+
+.navbar-collapse { background-color: black !important; }
+
 .navbar-nav {
 	margin: 0 -15px !important;
+
+	li {
+		a:focus, a:hover, a:active { background-color: $NAV_BLUE_BACKGROUND !important; }
+	}
 }
