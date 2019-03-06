@@ -5,13 +5,27 @@
 		<% include _partials/nav %>
 		<main class="container">
 			<header class="row">
-				<article class="col-md-9">
+				<aside class="col-md-3 col-md-push-9">
+					<%- include("./_partials/sidebar") %>
+				</aside>
+				<article class="col-md-9 col-md-pull-3">
 					<section class="row">
 						<summary class="col-md-12">
 					    	<h1> &lt;Aff target="dev" /></h1>
 					    	<h3> Hello my name is Akira &#x1F44B;! I am a self-taught web developer.</h3>
 		  				</summary>
 		  			</section>
+			    	<section class="row">
+			    		<summary class="col-md-12">
+			    			<h3>Project Tracker</h3>
+			    			<p>Here are couple of projects that I am currently working on right now:</p>
+			    			<ul>
+			    				<li><a href="./projects/personal-website">Personal Website</a> (akiraff.com): My personal website which is being built MERN stack. <span class="badge badge-active">active</span></li>
+			    				<li><a href="./projects/project-tracker">Project tracker website</a> (aff.dev): My personal project tracker website, is purely built on Express. <span class="badge badge-active">active</span></li>
+			    				<li><a href="./projects/roster-schedule">Roster Schedule</a>: A way to manage total hours that staff have worked. 100% vanilla PHP. <span class="badge badge-inactive">inactive</span></li>
+			    			</ul>
+			    		</summary>
+			    	</section>
 
 		  			<section class="row">
 		  				<summary class="col-md-6">
@@ -39,25 +53,9 @@
 			    			<p>Trasition from Hospitality to Web Development, that've been on my bucket list for nearly 5 years! I've been teaching myself for the past 3 years on Udemy, mainly NodeJS and React. Aff.dev also have a <a href="./goals">Bucket List</a> available, of things that I would like to accomplish as a developer.</p>
 			    		</summary>
 			    	</section>
-
-			    	<section class="row">
-			    		<summary class="col-md-6">
-			    			<h3>Project Tracker</h3>
-			    			<p>Here are couple of projects that I am currently working on right now:</p>
-			    			<ul>
-			    				<li>Personal Website (akiraff.com): My personal website which is being built MERN stack. <span class="badge badge-active">active</span></li>
-			    				<li>Project tracker website (aff.dev): My personal project tracker website, is purely built on Express. <span class="badge badge-active">active</span></li>
-			    				<li>Roster Schedule: A way to manage total hours that staff have worked. 100% vanilla PHP. <span class="badge badge-inactive">inactive</span></li>
-			    			</ul>
-			    		</summary>
-			    	</section>
 	    		</article>
 
-				<aside class="col-md-3">
-					<%- include("./_partials/sidebar") %>
-				</aside>
 			</header>
-
   		</main>
 		<%- include('./_partials/footer') %>
 	</body>
