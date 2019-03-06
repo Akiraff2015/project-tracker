@@ -6,17 +6,41 @@
 	},
 	"tasks": [
 		{
-			"title": "",
-			"description": "",
+			"title": "React Router",
+			"description": "Implementing frontend routing on my website, to manage my components easier",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implementing JWT",
+			"description": "Implementing user JWT (JSON Web token), been a quite high priority on my website in order to restrict user's action",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Proxy client and server (Express to React)",
+			"description": "Proxy to my Express server, and create an API to connect to akiraff.com and aff.dev",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implementing Blog CRUD Operation",
+			"description": "Implement a simple blog, where I can post new contents",
 			"subtask": null,
 			"completed": "n/a"
 		}
 	],
 	"bugs": [
 		{
-			"title": "",
-			"type": "",
-			"description": "",
+			"title": "Mobile Responsive",
+			"type": "mobile",
+			"description": "High priority in fixing mobile responsive. And removing red background (which I used for debugging purpose), and create a development and production branch on github.",
+			"fixed": "n/a"
+		},
+		{
+			"title": "Connecticing Express with React",
+			"type": "production",
+			"description": "React is not able to proxy Express in requesting basic API calls",
 			"fixed": "n/a"
 		}
 	],

@@ -6,17 +6,41 @@
 	},
 	"tasks": [
 		{
-			"title": "",
-			"description": "",
+			"title": "Being able to get time range between dates",
+			"description": "User is able to get a time range between start and end date, and display correct information",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Reformat data table" ,
+			"description": "The current data structure, is not flexible and it s not scalable",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Creating API point",
+			"description": "Creating API in order to retrieve data faster.",
+			"subtask": null,
+			"completed": "n/a"
+		},
+		{
+			"title": "Implementing ORM / Migration",
+			"description": "It is getting very hard to manage the SQL data, with the data being restructuring and some of pages are resulting to be broken",
 			"subtask": null,
 			"completed": "n/a"
 		}
 	],
 	"bugs": [
 		{
-			"title": "",
-			"type": "",
-			"description": "",
+			"title": "Not being to send $_POST request",
+			"type": "backend",
+			"description": "Due to data structure change, form is no longer working properly",
+			"fixed": "n/a"
+		},
+		{
+			"title": "API Call",
+			"type": "backend",
+			"description": "The json data is not being decoded properly",
 			"fixed": "n/a"
 		}
 	],
