@@ -6,13 +6,21 @@ $PROFILE_BACKGROUND: rgba(49, 116, 175, 0.3);
 // Margin definition
 $MARGIN_BOTTOM: 20px, 25px;
 $MARGIN_LEFT: 5px;
+$MARGIN_RIGHT: 20px;
 
 // Active / Hover navigation bar 
 $NAV_BLUE_BACKGROUND: #3174AF;
 
 // Badge colors
 $BADGE_COLOR: (
-	active: #30C20E,
-	inactive: #BA0000,
-	white: #FFF
+	"active": #30C20E,
+	"inactive": #BA0000,
+	"white": #FFF
 );
+
+// Theme color
+$BLUE_GREEN: #0FA3B1;
+$GAINBORO: #D9E5D6;
+$DARK_PASTEL_BLUE: #7EA3CC;
+$CYAN_CORNFLOWER: #197BBD;
+$BLUE_SAPPHIRE: #125E8A;

@@ -14,7 +14,7 @@
 				"Setting up NGINX and Proxy to redirect to HTTPS",
 				"Initialize new git repository, in order to clone repository on the server"
 			],
-			"completed": "n/a"
+			"completed": "7 Mar, 2019"
 		},
 		{
 			"title": "Semantic HTML",
@@ -86,6 +86,11 @@
 		}
 	],
 	"progress": [
+		{
+			"title": "Day 5: Deployment day!",
+			"date": "7 March, 2019",
+			"content": "It was quite a hassle in Configuring my NGINX srever, DNS for Namecheap and DigitalOcean. I found strange that my domain was not pointing back to my DigitalOcean nor redirecting. After hassling through the DNS for Namecheap and DigitalOcean, I found out the values and host for Namecheap where switched around. Then, I waited for another 6 hours"
+		},
 		{
 			"title": "Day 4: Refactoring my CSS to SASS",
 			"date": "6 March, 2019",

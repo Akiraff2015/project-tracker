@@ -2,12 +2,13 @@
 
 html, body { 
 	height:100%; 
-	margin:0; 
+	margin:0;
 }
 
 body{ 
   display:flex; 
-  flex-direction:column; 
+  flex-direction:column;
+  background-color: $GAINBORO !important; 
 }
 
 footer{
@@ -25,6 +26,12 @@ footer{
 @each $margin_left in $MARGIN_LEFT {
 	.margin-left-#{$margin_left} {
 		margin-left: $margin_left;
+	}
+}
+
+@each $margin_right in $MARGIN_RIGHT {
+	.margin-right-#{$margin_right} {
+		margin-right: $margin_right;
 	}
 }
 
